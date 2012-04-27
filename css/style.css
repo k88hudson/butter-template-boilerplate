@@ -14,6 +14,10 @@ body {
   width: 450px;
 }
 
+#video object {
+  width: 450px;
+}
+
 .column{
   float: left;
   margin-right: 30px;
