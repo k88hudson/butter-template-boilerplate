@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>My Template</title> <!-- CHANGE THE TITLE! -->
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="butter/css/butter.ui.deprecated.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://browserid.org/include.js" type="text/javascript" data-butter-exclude></script>
+    <script src="butter/src/butter.js" data-butter-exclude /></script>
+    <script type="text/javascript" src="js/mytemplate.js" data-butter-exclude /></script>
+</head>
+<body>
+    <!-- 
+
+    Hints:
+    data-butter="media"       Add to the video/div that will contain your media element.  
+    data-butter="target"      Add to anything you want to be a target. Make sure you give them a unique ID!
+    data-butter="exclude"     Add to anything you want to show up in the editor, but NOT the exported/shared project. 
+    
+    -->
+    <div class="wrapper">
+    <section class="column">
+        <video id="video" data-butter="media" controls>
+          <source src="butter/external/popcorn-js/test/trailer.ogv"></source>
+          <source src="butter/external/popcorn-js/test/trailer.mp4"></source>
+        </video>
+        <div class="container-div" data-butter="target" id="Bottom">
+            <label>Bottom</label>
+        </div>
+    </section>
+    <section class="column">
+        <div class="container-div">
+            <div class="content-div" data-butter="target" id="Right1"></div>
+            <label>Right1</label>
+        </div>
+        <div class="container-div">
+            <div class="content-div" data-butter="target" id="Right2" data-butter-default ></div>
+            <label>Right2</label>
+        </div>
+    </section>
+</div>
+</body>
+</html>
