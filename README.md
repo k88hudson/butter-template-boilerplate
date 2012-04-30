@@ -2,6 +2,7 @@ How to make a template
 ======================
 
 First, download the folder including all submodules.
+`git clone https://k88hudson@github.com/k88hudson/butter-template-boilerplate.git --recursive`
 
 1. Create your html file
 ------------------------
